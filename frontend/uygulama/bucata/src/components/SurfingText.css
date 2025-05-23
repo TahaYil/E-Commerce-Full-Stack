@@ -1,0 +1,44 @@
+.surfing-text-container {
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 0; 
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    top: 60px;  
+    height: 40px; 
+    z-index: 10;
+    display: flex;
+    align-items: center;  
+}
+
+
+
+.surfing-text-inner {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.surfing-text-content {
+    display: inline-block;
+    white-space: nowrap;
+    padding-left: 100%;  
+    animation: surfing 15s linear infinite;
+}
+
+.surfing-text-content span {
+    display: inline-block;
+    padding: 0 15px;
+    font-size: 16px;
+}
+
+@keyframes surfing {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
